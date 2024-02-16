@@ -1,12 +1,19 @@
+* {
+    font-family: "Oswald", sans-serif;
+}
+
 nav {
     background-color: #299ba6;
+}
+
+textarea {
+    height: 150px;
 }
 
 footer {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #0dcaf0;
 }
 
 .footer-text {

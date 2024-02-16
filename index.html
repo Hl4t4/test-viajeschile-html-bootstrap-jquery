@@ -22,23 +22,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
     <title>Viajes Chile</title>
 </head>
-<body>
-    <nav class="container-fluid">
+<body class="bg-black">
+    <nav class="container-fluid bg-info">
 
     </nav>
-    <header class="container-fluid">
+    <header class="container-fluid bg-black">
 
     </header>
-    <section class="container">
+    <section class="container bg-black">
 
     </section>
-    <section class="container">
+    <section class="container bg-black">
 
     </section>
-    <section class="container">
-
+    <section class="container bg-black">
+        <div class="row" id="contacto">
+            <div class="col py-4">
+                <h1 class="text-center text-light">CONTACTO</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label text-light">Nombre</label>
+                        <input type="text" class="form-control" id="nameInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subjectInput" class="form-label text-light">Asunto</label>
+                        <input type="text" class="form-control" id="subjectInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="messageText" class="form-label text-light">Mensaje</label>
+                        <textarea type="text" class="form-control" id="messageText"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-info text-light">Enviar</button>
+                </form>
+            </div>
+        </div>
     </section>
-    <footer class="container-fluid px-2 px-md-5">
+    <footer class="container-fluid bg-info px-2 px-md-5">
         <div class="row text-light pt-4 pb-2 px-1 px-md-5">
             <div class="col-5 text-start ps-2 ps-md-5">
                 <p class="footer-text">VIAJES CHILE</p>
