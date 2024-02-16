@@ -34,6 +34,7 @@ if (alertTrigger) {
 
 $(document).ready(function(){
     // Una vez cargada la página ajusta que todas las imagenes en los cards tengan el mismo alto
+    cardImage1 = document.getElementById("card-image-1");
     cardImage2.style.maxHeight = cardImage1.clientHeight + 'px';
     cardImage3.style.maxHeight = cardImage1.clientHeight + 'px';
     cardImage4.style.maxHeight = cardImage1.clientHeight + 'px';
