@@ -19,4 +19,15 @@ $(document).ready(function(){
         cardImage3.style.maxHeight = cardImage1.clientHeight + 'px';
         cardImage4.style.maxHeight = cardImage1.clientHeight + 'px';
     });
+
+    function scrollToAnchor(aid){
+        const destination = $(aid);
+          $('html,body').animate({
+            scrollTop: destination.offset().top
+          },'slow');
+      }
+      
+      $(document).on('click', '.nav-link', function(){
+        scrollToAnchor($(this)[0].hash);
+      })
 });
