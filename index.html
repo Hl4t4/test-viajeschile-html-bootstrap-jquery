@@ -7,19 +7,21 @@
     <meta name="author" content="Jose Latapiatt">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/img/viajes.svg">
-    <!-- Bootstrap -->
+    <!-- Bootstrap en su version 5.3.2-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <!-- Font Awesome usado inicialmente en su version 6.5.1 -->
     <script src="https://kit.fontawesome.com/c8ed5828b7.js" crossorigin="anonymous"></script>
+    <!-- JQuery en su version 3.7.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <!-- Bootstrap JS en su version 5.3.2 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
     <title>Viajes Chile</title>
 </head>
 <!-- Se deja negro el fondo del body en general porque las letras son en su mayoria blancas -->
@@ -27,10 +29,14 @@
     <!-- Seccion del navbar esta con un bg color transparente para calzar con la imagen, pero se puede colocar un color solido y un margen para separarlo del resto del contenido -->
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-info px-md-5 bg-transparent">
         <div class="container-fluid px-md-5">
-            <a class="navbar-brand nav-brand-text text-light ps-md-5" href="#">
-                <img src="assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block">
-                Viajes Chile
-            </a>
+            <button type="button" class="btn" id="liveAlertBtn">
+                <a class="navbar-brand nav-brand-text text-light ps-md-5" href="#">
+                    <img src="assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block">
+                    Viajes Chile
+                </a>
+            </button>
+            <div id="surprisePrize">
+            </div>
             <button class="navbar-toggler btn-outline-light" type="button" style="border-color: white;" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
             </button>
@@ -184,9 +190,8 @@
                 </a>
             </div>
         </div>
-    </footer>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </footer>  
+    
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
 </body>
