@@ -29,14 +29,15 @@
     <!-- Seccion del navbar esta con un bg color transparente para calzar con la imagen, pero se puede colocar un color solido y un margen para separarlo del resto del contenido -->
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-info px-md-5 bg-transparent">
         <div class="container-fluid px-md-5">
+            <!-- Funcion "oculta" que genera premios -->
             <button type="button" class="btn" id="liveAlertBtn">
                 <a class="navbar-brand nav-brand-text text-light ps-md-5" href="#">
                     <img src="assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block">
                     Viajes Chile
                 </a>
             </button>
-            <div id="surprisePrize">
-            </div>
+            <!-- Espacio para agregar alertas -->
+            <div id="surprisePrize"></div>
             <button class="navbar-toggler btn-outline-light" type="button" style="border-color: white;" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
             </button>
@@ -164,7 +165,7 @@
                         <label for="messageText" class="form-label text-light">Mensaje</label>
                         <textarea type="text" class="form-control" id="messageText"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-info text-light">Enviar</button>
+                    <button type="submit" class="btn btn-info text-light" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Esta información será leido por nuestros operadores y sera respondido desde nuestro correo empresarial.">Enviar</button>
                 </form>
             </div>
         </div>

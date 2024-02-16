@@ -19,6 +19,12 @@ footer {
     font-style: normal;
 }
 
+/* Cambio de colores del tooltip */
+.tooltip-inner {
+    background-color: #0dcaf0;
+    box-shadow: 0px 0px 4px #0dcaf0;
+}
+
 /* Eleccion de fuente para el logo del navbar */
 .nav-brand-text {
     font-family: "Bebas Neue", sans-serif;
