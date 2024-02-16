@@ -1,3 +1,4 @@
+/* Fuente utilizada para la mayoria de la pagina */
 * {
     font-family: "Oswald", sans-serif;
 }
@@ -6,20 +7,19 @@
     scroll-behavior: smooth
 } */
 
-nav {
-    background-color: #299ba6;
-}
-
+/* Tamaño inicial del textarea para mensajes */
 textarea {
     height: 150px;
 }
 
+/* Eleccion de fuente para footer */
 footer {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+/* Eleccion de fuente para el logo del navbar */
 .nav-brand-text {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;

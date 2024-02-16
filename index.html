@@ -22,7 +22,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
     <title>Viajes Chile</title>
 </head>
+<!-- Se deja negro el fondo del body en general porque las letras son en su mayoria blancas -->
 <body class="bg-black">
+    <!-- Seccion del navbar esta con un bg color transparente para calzar con la imagen, pero se puede colocar un color solido y un margen para separarlo del resto del contenido -->
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-info px-md-5 bg-transparent">
         <div class="container-fluid px-md-5">
             <a class="navbar-brand nav-brand-text text-light ps-md-5" href="#">
@@ -32,6 +34,7 @@
             <button class="navbar-toggler btn-outline-light" type="button" style="border-color: white;" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
             </button>
+            <!-- Es tanto el menu del navbar extenso como colapsado -->
             <div class="collapse navbar-collapse ps-3 pe-md-5" id="navbarNav">
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link text-light" id="test" href="#inicio">Inicio</a>
@@ -42,6 +45,7 @@
             </div>
         </div>
     </nav>
+    <!-- Seccion usada de header con el carrousel -->
     <header class="container-fluid bg-black" id="inicio">
         <div class="row">
             <div class="col">
@@ -70,6 +74,7 @@
             </div>
         </div>
     </header>
+    <!-- Primer section, que contiene la seccion quienes somos, la que se oculta al achicar la pantalla -->
     <section class="container bg-black">
         <h1 class="d-none d-xs-none d-sm-none d-md-block text-center text-light pt-4">¿QUIÉNES SOMOS?</h1>
         <div class="row row-cols-3 d-none d-xs-none d-sm-none d-md-flex py-5" id="quienes">
@@ -105,6 +110,7 @@
             </div>
         </div>
     </section>
+    <!-- Segunda sección de destacados, con 4 cards que se organizan segun el tamaño de la ventana -->
     <section class="container bg-black">
         <h1 class="text-center text-light pt-4">DESTACADOS</h1>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 py-4" id="destacados">
@@ -134,6 +140,7 @@
             </div>
         </div>
     </section>
+    <!-- Tercer y ultima sección que contiene un form para contacto, se podrian agregar funcionalidades de correo -->
     <section class="container bg-black">
         <div class="row" id="contacto">
             <div class="col py-4">
@@ -156,6 +163,7 @@
             </div>
         </div>
     </section>
+    <!-- Footer donde se encuentra el logo de la empresa junto con links a distintas formas de contacto, por ahora direccionados a la página base -->
     <footer class="container-fluid bg-info px-2 px-md-5">
         <div class="row text-light pt-4 pb-2 px-1 px-md-5">
             <div class="col-6 text-start ps-2 ps-md-5">
