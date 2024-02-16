@@ -32,12 +32,12 @@ if (alertTrigger) {
   })
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
     // Una vez cargada la página ajusta que todas las imagenes en los cards tengan el mismo alto
-    $('#card-image-1').ready(function() {
+    $('#card-image-1').ready(function () {
         // cardImage1 = document.getElementById("card-image-1");
         // console.log(cardImage1.clientHeight)
-        if (cardImage1.clientHeight !== ""){
+        if (cardImage1.clientHeight != "" && cardImage1.clientHeight != 0) {
             cardImage2.style.maxHeight = cardImage1.clientHeight + 'px';
             cardImage3.style.maxHeight = cardImage1.clientHeight + 'px';
             cardImage4.style.maxHeight = cardImage1.clientHeight + 'px';
