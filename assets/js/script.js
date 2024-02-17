@@ -8,9 +8,14 @@ var cardImage2 = document.getElementById("card-image-2");
 var cardImage3 = document.getElementById("card-image-3");
 var cardImage4 = document.getElementById("card-image-4");
 
+// Binding de elementos para cambiar valores segun scroll
+let navbarElement = document.querySelector("nav");
+let quienesElement = document.getElementById("quienes");
+
 // Variable para lugar de premio de alerta
 var prizeNumber = 10000;
 
+// Necesario para agregar un div con la alerta
 const alertPlaceholder = document.getElementById('surprisePrize')
 const appendAlert = (message, type) => {
   const wrapper = document.createElement('div')
@@ -24,6 +29,7 @@ const appendAlert = (message, type) => {
   alertPlaceholder.append(wrapper)
 }
 
+// Binding del boton para la alerta y trigger
 const alertTrigger = document.getElementById('liveAlertBtn')
 if (alertTrigger) {
   alertTrigger.addEventListener('click', () => {
@@ -32,13 +38,23 @@ if (alertTrigger) {
   })
 }
 
+
 $(document).ready(function () {
+    // Cambiar el fondo del navbar cuando hay scroll
+    $(window).on( "scroll", function () {
+        if (quienesElement.getBoundingClientRect().top <= 0) {
+            navbarElement.className = "navbar navbar-dark navbar-expand-lg fixed-top bg-info px-md-5 bg-black";
+        } else {
+            navbarElement.className = "navbar navbar-dark navbar-expand-lg fixed-top bg-info px-md-5 bg-transparent";
+        }
+    });
+
     // Una vez cargada la página ajusta que todas las imagenes en los cards tengan el mismo alto
     $( window ).on( "load", function() {
         cardImage2.style.maxHeight = cardImage1.clientHeight + 'px';
         cardImage3.style.maxHeight = cardImage1.clientHeight + 'px';
         cardImage4.style.maxHeight = cardImage1.clientHeight + 'px';
-    })
+    });
 
     // Ajuste de alto de los cards con imagenes cuando se ajusta el tamaño de la página
     $(window).on('resize', function() {
